@@ -1,0 +1,13 @@
+[Unit]
+Description=MQTT Light Strip Control
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/lib/mqtt-lights/mqtt-lights.py
+WorkingDirectory=/usr/local/lib/mqtt-lights
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+Type=notify
+User=mqtt-lights
+
+[Install]
+WantedBy=default.target
