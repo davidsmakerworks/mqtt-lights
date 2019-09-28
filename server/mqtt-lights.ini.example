@@ -7,5 +7,3 @@ TLS = False
 Username = example
 Password = p@55word
 
-[Printer]
-PrinterFile = /dev/usb/lp0
